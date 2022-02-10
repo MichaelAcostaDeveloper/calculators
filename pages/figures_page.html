@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet href="/styles/figures_style.css" type="text/css" media=screen>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Figuras Geométricas</title>
+</head>
+<body>
+    <div class = "contenedor">
+        <div class="subcontenedor">
+            <div class="figura">
+                <div class="encabezado">
+                    <p>Square</p>
+                    <img src="/icons-logos/cuadrado.svg" alt="cuadrado">
+                </div>
+                <form>
+                    <label for="InputCuadrado" class="label">Side:</label>
+                    <input type="number" id="InputCuadrado" placeholder="value in cm" class="input-lado" >
+                </form>
+                <div class="botonera">
+                    <button type="button" class="boton" onclick="calcularAreaCuadrado()">Surface</button>
+                    <button type="button" class="boton" onclick="calcularPerimetroCuadrado()">Perimeter</button>
+                </div>
+                <div class="resultados">
+                    <p id="result"></p>
+                </div>
+            </div>
+
+            <div class="figura">
+                <div class="encabezado">
+                    <p>Rectangle</p>
+                    <img src="/icons-logos/rectangulo.svg" alt="rectangulo">
+                </div>
+                <form>
+                    <label for="InputRectanguloA" class="label">Longest side:</label>
+                    <input type="number" id="InputRectanguloA" placeholder="value in cm" class="input-lado" >
+                    <label for="InputRectanguloB" class="label">Shortest side:</label>
+                    <input type="number" id="InputRectanguloB" placeholder="value in cm" class="input-lado" >
+                </form>
+                <div class="botonera">
+                    <button type="button" class="boton" onclick="calcularAreaRectangulo()">Surface</button>
+                    <button type="button" class="boton" onclick="calcularPerimetroRectangulo()">Perimeter</button>
+                </div>
+                <div class="resultados">
+                    <p id="resultRectangle"></p>
+                </div>
+            </div>
+
+            <div class="figura">
+                <div class="encabezado">
+                    <p>Triangle</p>
+                    <img src="/icons-logos/triangulo.svg" alt="triangulo">
+                </div>
+                <form>
+                    <p for="datos" class="label">Side a:</p>
+                    <input type="number" id="lado_a" placeholder="value in cm" class="input-lado" >
+                    <p for="datos" class="label">Side b:</p>
+                    <input type="number" id="lado_b" placeholder="value in cm" class="input-lado" >
+                    <p for="datos" class="label">Side c:</p>
+                    <input type="number" id="lado_c" placeholder="value in cm" class="input-lado" >
+                </form>
+                <div class="botonera">
+                    <button class="boton" onclick="checkingTriangle()">Surface</button>
+                    <button class="boton" onclick="perimeterTriangle()">Perimeter</button>
+                </div>
+                <div class="resultados">
+                    <p id="resultadoTriangulo">result</p>
+                </div>
+
+            </div>
+            <div class="figura">
+                <div class="encabezado">
+                    <p>Circumference</p>
+                    <img src="/icons-logos/circulo.svg" alt="circunferencia">
+                </div>
+                <form>
+                    <label for="InputRadio" class="label">Radio:</label>
+                    <input type="number" id="InputRadio" placeholder="value in cm" class="input-lado" >
+                </form>
+                <div class="botonera">
+                    <button class="boton" type="button" onclick="circulo()">Surface</button>
+                    <button class="boton" type="button" onclick="circunf()">Perimeter</button>
+                </div>
+                <div class="resultados">
+                    <p id="resultCircunf"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='/logic//figures.js'></script>
+</body>
+</html>

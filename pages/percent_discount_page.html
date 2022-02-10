@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet href="/styles/percent_discount_style.css" type="text/css" media=screen>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container">
+            <div class="head_container">
+                <h1>Porcentajes y descuentos</h1>
+
+                <div class="titles">
+                    <img src="/icons-logos/image.svg" alt="logo">
+                    <p>By GreenyTech</p>
+                </div>
+            </div>
+            <div class="form_container">
+                <p>Calculadora</p>
+                <form>
+                    <label for="price_prodcut">Precio del producto $ :</label>
+                    <input id="price_product" type="number">
+                    <label for="discount">Descuento del producto % :</label>
+                    <input id="discount" type="number">
+                </form>
+            </div>
+            <div class="button_container">
+                <button type="button" onclick="calculate_precio()">Calcular el valor a pagar</button>
+            </div>
+            <div class="result_container">
+                <p id="resultados"></p>
+            </div>
+        </div>
+    </div>
+    <script src='/logic/discount.js'></script>
+</body>
+
+</html>
