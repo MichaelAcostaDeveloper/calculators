@@ -1,0 +1,50 @@
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+    --graybase:#616A6B ;
+    --base-color-dark:#eee4e4;
+    --base-color-light:#f3eded;
+    --blue-light:#145374;
+    --blue-dark:#00334E;
+    --salmon-focus:#EE6F57;
+    --sm:12px;
+    --md:16px;
+    --lg:20px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+@media(min-width: 1024px){
+.main_cabecera{
+display: block;
+}
+    .main_cabecera .cabecera{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 80px;
+        justify-content: space-between;
+        background: #eee4e4;
+        align-items: center;
+    }
+    .main_cabecera .cabecera .logotipo_marca{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+        .main_cabecera .cabecera .logotipo_marca img{
+        width: 100px;
+        height: auto;
+        transform: rotate(-90deg);
+        margin-bottom: 60px;
+        }
+    .main_cabecera .cabecera a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--sm);
+    font-weight: bold;
+    transform: rotate(-90deg) translate(-100px, 0px);
+    color: #145374;
+    }
+}
