@@ -15,36 +15,90 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
-@media(min-width: 1024px){
-.main_cabecera{
-display: block;
+
+@media(min-width:1024px){
+.main_head{
+display: flex;
 }
-    .main_cabecera .cabecera{
+    .main_head .head{
         display: flex;
         flex-direction: column-reverse;
-        height: 100vh;
-        width: 80px;
         justify-content: space-between;
-        background: #eee4e4;
+        height: 100vh;
+        width: 84px;
+        background: var(--blue-dark);
+        place-items: center;
         align-items: center;
-    }
-    .main_cabecera .cabecera .logotipo_marca{
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-        .main_cabecera .cabecera .logotipo_marca img{
-        width: 100px;
+        justify-items: center;
+        }
+    .main_head .head .logotype_brand img{
+        width: 150px;
         height: auto;
         transform: rotate(-90deg);
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         }
-    .main_cabecera .cabecera a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: var(--sm);
-    font-weight: bold;
-    transform: rotate(-90deg) translate(-100px, 0px);
-    color: #145374;
+    .main_head .head a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: var(--md);
+        font-weight: bold;
+        transform: rotate(-90deg) translate(-100px, 0px);
+        color: var(--white);
+        }
+        .main_head .head a {
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+        }
+        .main_head .head a:hover,
+        .main_head .head a:focus {
+            background-size: 100% 2px;
+        }
     }
+
+@media(max-width:1024px){
+    .main_head{
+        display: flex;
+    }
+    .main_head .head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        place-items: center;
+        align-items: center;
+        justify-items: center;
+        height: 80px;
+        width: 100vw;
+        background: var(--blue-dark);
+
+    }
+
+    .main_head .head .logotype_brand img{
+        width: 150px;
+        height: auto;
+        padding: 0 0 0 100px;
+
+        }
+    .main_head .head a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: var(--md);
+            font-weight: bold;
+            color:var(--white);
+            margin: 0 100px 0 0;
+    }
+            .main_head .head a {
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+            }
+            .main_head .head a:hover, 
+            .main_head .head a:focus {
+                background-size: 100% 2px;
+            }
+
 }
