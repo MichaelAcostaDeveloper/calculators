@@ -16,7 +16,6 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
-
 @media(min-width:1024px){
 .principal{
     display: flex;
@@ -79,7 +78,6 @@ body{
             display: grid;
             place-content: center;
         }
-
         .principal .main_container .container_apps .aplicacion{
             display: flex;
             flex-direction: row;
@@ -88,23 +86,17 @@ body{
             border: 2px solid var(--blue-dark);
             border-radius: 16px;
             padding: 16px;
-            margin: 16px;
+            margin: 12px;
+            cursor: pointer;
+            color: var(--blue-dark);
         }
-
-        .principal .main_container .container_apps .aplicacion:hover{
-            display: flex;
-            flex-direction: row;
-            place-items: center;
-            align-items: center;
-            border: 2px solid var(--white);
-            border-radius: 16px;
-            padding: 16px;
-            margin: 16px;
-            background:var(--salmon-focus);
-            color: var(--base-color-light);
-        }
-        .principal .main_container .container_apps img{
+        .principal .main_container .container_apps .aplicacion img:nth-child(1){
             width: 100px;
+            display: block;
+        }
+        .principal .main_container .container_apps .aplicacion img:nth-child(2){
+            width: 100px;
+            display: none;
         }
         .principal .main_container .container_apps .topic{
             font-weight: 600;
@@ -114,7 +106,20 @@ body{
         .principal .main_container .container_apps .little_container{
             padding: 0 0 0 32px
         }
-    }
+        .principal .main_container .container_apps .aplicacion:hover{
+            display: flex;
+            flex-direction: row;
+            place-items: center;
+            align-items: center;
+            border: 2px solid var(--white);
+            border-radius: 32px;
+            padding: 16px;
+            margin: 16px;
+            background:var(--salmon-focus);
+            color: var(--base-color-light);
+            transition: all 0.3s;
+            }
+}
 
 @media(max-width:1024px){
     .main_head{
@@ -130,7 +135,6 @@ body{
         height: 96px;
         width: 100vw;
         background: var(--blue-dark);
-
     }
 
     .main_head .head .logotype_brand img:nth-child(1){
