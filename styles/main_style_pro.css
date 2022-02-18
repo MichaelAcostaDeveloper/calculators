@@ -16,28 +16,34 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
-@media(min-width:1024px){
+@media(min-width:850px){
 .principal{
     display: flex;
     flex-direction: row;
+    place-content: center;
+    align-items: center;
+
 }
 /*In this container you can see the design to the header with the navigation*/
     .principal .main_head{
         display: flex;
+        height: 100vh;
+        width:70px;
+        
         }
         .principal .main_head .head{
             display: flex;
             flex-direction: column-reverse;
             justify-content: space-between;
             height: 100vh;
-            width: 96px;
+            width:70px;
             background: var(--blue-dark);
             place-items: center;
             align-items: center;
             justify-items: center;
             }
             .principal .main_head .head .logotype_brand img:nth-child(1){
-                    width: 150px;
+                    width: 120px;
                     height: auto;
                     transform: rotate(-90deg);
                     margin-bottom: 100px;
@@ -48,7 +54,7 @@ body{
             .principal .main_head .head a{
                     text-decoration: none;
                     text-transform: uppercase;
-                    font-size: var(--md);
+                    font-size: var(--sm);
                     font-weight: bold;
                     transform: rotate(-90deg) translate(-100px, 0px);
                     color: var(--white);
@@ -64,19 +70,25 @@ body{
                 .principal .main_head .head a:focus {
                                     background-size: 100% 2px;
                                 }
-    /*Este contenedor engloba la desripcion y las cardview de las aplicaciones*/
+    /*Este contenedor engloba la descripcion y las cardview de las aplicaciones*/
     .principal .main_container{
+        width: 100vw;
+        height: 100%;
         display: flex;
+        flex-direction: row;
+        place-content: center;
+        place-items: center;
+        align-items: center;
     }
     /*In this bloks you can see the design to the description part*/
         .principal .main_container .container_description{
         display: flex;
         flex-direction: column;
         place-content: center;
-        /*align-items: center;*/
         }
-        .principal .main_container .container_description h1:nth-child(1){
-            padding: 24px 12px 12px 36px;
+        .principal .main_container .container_description p:nth-child(1){
+            font-size: var(--lg);
+            padding: 12px 8px 8px 36px;
             font-weight: bold;
             place-items: center;
             align-items: center;
@@ -84,28 +96,30 @@ body{
             margin: 0;
         }
         .principal .main_container .container_description p:nth-child(2){
-            font-size: 18px;
+            font-size: var(--sm);
             padding: 12px 12px 12px 36px;
             place-items: center;
             align-items: center;
             margin: 0;
         }
         .principal .main_container .container_description p:nth-child(3){
-            font-size: 18px;
+            font-size: var(--sm);
             font-weight: 500;
             color:var(--blue-dark);
-            padding: 12px 12px 12px 36px;
+            padding: 8px 12px 12px 36px;
             margin: 10px 0 0 0 ;
         }
         .principal .main_container .container_description ul{
             display: flex;
             flex-direction: column;
+            margin: 0;
         }
         .principal .main_container .container_description ul li{
+            font-size: var(--sm);
             text-decoration: none;
             list-style: none;
-            margin:4px 0 8px 12px;
-            padding: 6px;
+            margin:4px 0 4px 8px;
+            padding: 6px 0 0 0 ;
         }
         .principal .main_container .container_description ul li a{
             text-decoration: none;
@@ -131,26 +145,33 @@ body{
             align-items: center;
             border: 2px solid var(--blue-dark);
             border-radius: 16px;
-            padding: 16px;
+            padding: 8px 16px 8px 8px;
             margin: 12px;
             cursor: pointer;
             color: var(--blue-dark);
     }
         .principal .main_container .container_apps .aplicacion img:nth-child(1){
-            width: 100px;
+            width: 64px;
             display: block;
             transition: opacity 1.5s ease-in-out;
             z-index: 2;
         }
         .principal .main_container .container_apps .aplicacion img:nth-child(2){
             position: absolute;
-            width: 100px;
+            width: 64px;
             display: block;
         }
         .principal .main_container .container_apps .topic{
-            font-weight: 600;
-            font-size:var(--xx);
+            font-size: var(--lg);
+            font-weight: bold;
             padding: 0 0 8px 0;
+        }
+        .principal .main_container .container_apps .descripcion{
+            font-size: var(--md);
+            }
+        .principal .main_container .container_apps .topic a{
+            color: var(--blue-dark);
+            text-decoration: none;
         }
         .principal .main_container .container_apps .little_container{
             padding: 0 0 0 32px
@@ -169,42 +190,49 @@ body{
             transition: all 0.3s;
             }
             .principal .main_container .container_apps .aplicacion img:nth-child(1):hover{
-                width: 100px;
+                width: 64px;
                 display: none;
                 transition: opacity 1.5s ease-in-out;
                 z-index: 1;
             }
             .principal .main_container .container_apps .aplicacion img:nth-child(2):hover{
-                width: 100px;
+                width: 64px;
                 display: block;
                 transition: opacity 1.5s ease-in-out;
                 z-index: 2;
             }
-}
+            .principal .main_container .container_apps .topic a:hover {
+                color: var(--base-color-dark);
+            }
 
+        }
 /*DISEÑO RESPONSIVO*/
-@media(max-width:1024px){
-    .main_head{
+@media(max-width:850px){
+    .principal{
         display: flex;
+        flex-direction: column;
     }
-    .main_head .head{
+    .principal .main_head{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+    .principal .main_head .head{
+        display: flex;
         justify-content: space-between;
         place-items: center;
         align-items: center;
         justify-items: center;
-        height: 96px;
+        height: 70px;
         width: 100vw;
         background: var(--blue-dark);
     }
-    .main_head .head .logotype_brand img:nth-child(1){
+    .principal .main_head .head .logotype_brand img:nth-child(1){
         display: none;
         }
-    .main_head .head .logotype_brand img:nth-child(2){
-        width: 64px;
-        height: 64px;
-        padding: 8px 0 0 100px;
+    .principal .main_head .head .logotype_brand img:nth-child(2){
+        width: 42px;
+        height: 42px;
+        padding: 8px 0 0 40px;
         align-items: center;
         place-items: center;
         justify-items: center;
@@ -213,10 +241,10 @@ body{
     .main_head .head a{
             text-decoration: none;
             text-transform: uppercase;
-            font-size: var(--md);
+            font-size: var(--sm);
             font-weight: bold;
             color:var(--white);
-            margin: 0 100px 0 0;
+            margin: 0 40px 0 0;
     }
             .main_head .head a {
                 background-image: linear-gradient(currentColor, currentColor);
@@ -227,7 +255,7 @@ body{
             }
             .main_head .head a:hover,
             .main_head .head a:focus {
-                background-size: 100% 2px;
+                background-size: 100% 1px;
             }
             .principal .main_container{
                 display: flex;
@@ -237,40 +265,42 @@ body{
                 display: flex;
                 flex-direction: column;
                 place-content: center;
-                /*align-items: center;*/
+                align-items: center;
                 }
-                .principal .main_container .container_description h1:nth-child(1){
-                    font-size: 36px;
-                    padding: 24px 12px 12px 36px;
+                .principal .main_container .container_description p:nth-child(1){
+                    font-size: var(--md);
+                    padding: 0;
                     font-weight: bold;
                     place-items: center;
                     align-items: center;
                     color:var(--blue-dark);
-                    margin: 0;
-                }
+                    }
                 .principal .main_container .container_description p:nth-child(2){
-                    font-size: 18px;
-                    padding: 24px 12px 12px 36px;
+                    font-size: var(--sm);
                     place-items: center;
                     align-items: center;
-                    margin: 0;
+                    place-content: center;
+                    color: var(--blue-dark);
+                    padding: 0 12px 0 12px;
+                    
                 }
                 .principal .main_container .container_description p:nth-child(3){
-                    font-size: 18px;
-                    font-weight: 500;
+                    font-size: var(--sm);
+                    font-weight: 600;
                     color:var(--blue-dark);
-                    padding: 12px 12px 12px 36px;
-                    margin: 10px 0 0 0 ;
-                }
+                                 }
                 .principal .main_container .container_description ul{
                     display: flex;
                     place-content: center;
+                    padding: 0;
+                    margin: 0;
                 }
                 .principal .main_container .container_description ul li{
+                    font-size: 10px;
                     text-decoration: none;
                     list-style: none;
-                    margin:4px 0 8px 12px;
-                    padding: 6px;
+                    margin:4px;
+                    padding: 4px;
                 }
                 .principal .main_container .container_description ul li a{
                     text-decoration: none;
@@ -279,12 +309,11 @@ body{
                 .principal .main_container .container_description ul li a:hover{
                     text-decoration: none;
                     list-style: none;
-                    border: 2px solid var(--salmon-focus);
                     cursor: pointer;
                     color: var(--salmon-focus);
-                    margin:4px 0 8px 12px;
-                    padding: 6px;
-                }
+                    padding:4px;
+                    
+                    }
                 .principal .main_container .container_apps{
                     display: grid;
                     place-content: center;
@@ -297,13 +326,13 @@ body{
                     border: 2px solid var(--blue-dark);
                     border-radius: 32px;
                     padding: 16px;
-                    margin: 14px;
+                    margin: 7px;
                     cursor: pointer;
                     color: var(--blue-dark);
             }
                 .principal .main_container .container_apps .aplicacion img:nth-child(1){
-                    width: 84px;
-                    height: 84px;
+                    width: 60px;
+                    height: 60px;
                     display: block;
                     transition: opacity 1.5s ease-in-out;
                     z-index: 2;
@@ -311,14 +340,21 @@ body{
 
                 .principal .main_container .container_apps .aplicacion img:nth-child(2){
                     position: absolute;
-                    width: 84px;
-                    height: 84px;
+                    width: 60px;
+                    height: 60px;
                     display: block;
                 }
                 .principal .main_container .container_apps .topic{
                     font-weight: 600;
-                    font-size:var(--xx);
+                    font-size:var(--sm);
                     padding: 0 0 8px 0;
+                }
+                .principal .main_container .container_apps .descripcion{
+                    font-size:10px;
+                }
+                .principal .main_container .container_apps .topic a{
+                    color: var(--blue-dark);
+                    text-decoration: none;
                 }
                 .principal .main_container .container_apps .little_container{
                     padding: 0 0 0 32px
@@ -337,15 +373,15 @@ body{
                     transition: all 0.3s;
                     }
                     .principal .main_container .container_apps .aplicacion img:nth-child(1):hover{
-                        width: 84px;
-                        height: 84px;
+                        width: 60px;
+                        height: 60px;
                         display: none;
                         transition: opacity 1.5s ease-in-out;
                         z-index: 1;
                     }
                     .principal .main_container .container_apps .aplicacion img:nth-child(2):hover{
-                        width: 84px;
-                        height: 84px;
+                        width: 60px;
+                        height: 60px;
                         display: block;
                         transition: opacity 1.5s ease-in-out;
                         z-index: 2;
