@@ -7,46 +7,44 @@
     --blue-light:#145374;
     --blue-dark:#00334E;
     --salmon-focus:#EE6F57;
-    --sm:12px;
-    --md:16px;
-    --lg:20px;
-    --xx:24px;
+    --sm:14px;
+    --md:18px;
+    --lg:22px;
+    --xx:26px;
 }
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
-@media(min-width:850px){
+@media(min-width:1024px){
 .principal{
     display: flex;
     flex-direction: row;
     place-content: center;
     align-items: center;
-
 }
 /*In this container you can see the design to the header with the navigation*/
     .principal .main_head{
         display: flex;
         height: 100vh;
-        width:70px;
-        
+        width:80px;
         }
         .principal .main_head .head{
             display: flex;
             flex-direction: column-reverse;
             justify-content: space-between;
             height: 100vh;
-            width:70px;
+            width:80px;
             background: var(--blue-dark);
             place-items: center;
             align-items: center;
             justify-items: center;
             }
             .principal .main_head .head .logotype_brand img:nth-child(1){
-                    width: 120px;
+                    width: 180px;
                     height: auto;
                     transform: rotate(-90deg);
-                    margin-bottom: 100px;
+                    margin-bottom: 124px;
                     }
             .principal .main_head .head .logotype_brand img:nth-child(2){
                     display: none;
@@ -54,89 +52,92 @@ body{
             .principal .main_head .head a{
                     text-decoration: none;
                     text-transform: uppercase;
-                    font-size: var(--sm);
+                    font-size: var(--md);
                     font-weight: bold;
-                    transform: rotate(-90deg) translate(-100px, 0px);
+                    transform: rotate(-90deg) translate(-124px, 0px);
                     color: var(--white);
                     }
                 .principal .main_head .head a {
                                     background-image: linear-gradient(currentColor, currentColor);
                                     background-position: 0% 100%;
                                     background-repeat: no-repeat;
-                                    background-size: 0% 2px;
+                                    background-size: 0% 1px;
                                     transition: background-size .3s;
                                 }
                 .principal .main_head .head a:hover,
                 .principal .main_head .head a:focus {
-                                    background-size: 100% 2px;
+                                    background-size: 100% 1px;
                                 }
-    /*Este contenedor engloba la descripcion y las cardview de las aplicaciones*/
+    /*This content includes the styles of main part and apps*/
     .principal .main_container{
         width: 100vw;
-        height: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: row;
         place-content: center;
         place-items: center;
         align-items: center;
+        justify-content: center;
     }
     /*In this bloks you can see the design to the description part*/
         .principal .main_container .container_description{
         display: flex;
         flex-direction: column;
         place-content: center;
+        margin: 0 12px 0 12px;
+        padding: 12px;
         }
-        .principal .main_container .container_description p:nth-child(1){
-            font-size: var(--lg);
-            padding: 12px 8px 8px 36px;
+        .principal .main_container .container_description h1{
             font-weight: bold;
             place-items: center;
             align-items: center;
             color:var(--blue-dark);
-            margin: 0;
+            margin: 24px 0 0 12px;
         }
         .principal .main_container .container_description p:nth-child(2){
-            font-size: var(--sm);
-            padding: 12px 12px 12px 36px;
+            font-size: var(--md);
             place-items: center;
             align-items: center;
-            margin: 0;
+            margin: 24px 0 0 12px;
         }
         .principal .main_container .container_description p:nth-child(3){
-            font-size: var(--sm);
-            font-weight: 500;
+            font-size: var(--md);
+            font-weight: 800;
             color:var(--blue-dark);
-            padding: 8px 12px 12px 36px;
-            margin: 10px 0 0 0 ;
+            margin: 24px 0 0 12px;
         }
         .principal .main_container .container_description ul{
             display: flex;
             flex-direction: column;
-            margin: 0;
+            margin: 24px 0 0 12px;
+            padding: 0;
         }
         .principal .main_container .container_description ul li{
-            font-size: var(--sm);
+            font-size: var(--md);
             text-decoration: none;
             list-style: none;
-            margin:4px 0 4px 8px;
-            padding: 6px 0 0 0 ;
+            padding: 8px 0 8px 0px;
         }
         .principal .main_container .container_description ul li a{
             text-decoration: none;
-            padding: 6px;
+            padding: 8px 8px 8px 8px;
             color: var(--blue-dark);
         }
         .principal .main_container .container_description ul li a:hover{
             text-decoration: none;
             list-style: none;
-            border: 2px solid var(--salmon-focus);
+            border: 1px solid var(--salmon-focus);
             cursor: pointer;
             color: var(--salmon-focus);
         }
         /*In this block you can see the design to the app part*/
         .principal .main_container .container_apps{
-            display: grid;
+            display: flex;
+            flex-direction: column;
             place-content: center;
+            align-content: center;
+            justify-content: center;
+            height: 100vh;
         }
         .principal .main_container .container_apps .aplicacion{
             display: flex;
@@ -145,20 +146,20 @@ body{
             align-items: center;
             border: 2px solid var(--blue-dark);
             border-radius: 16px;
-            padding: 8px 16px 8px 8px;
-            margin: 12px;
+            margin: 8px 20px 8px 0;
+            padding: 12px;
             cursor: pointer;
             color: var(--blue-dark);
     }
         .principal .main_container .container_apps .aplicacion img:nth-child(1){
-            width: 64px;
+            width: 96px;
             display: block;
             transition: opacity 1.5s ease-in-out;
             z-index: 2;
         }
         .principal .main_container .container_apps .aplicacion img:nth-child(2){
             position: absolute;
-            width: 64px;
+            width: 96px;
             display: block;
         }
         .principal .main_container .container_apps .topic{
@@ -190,13 +191,13 @@ body{
             transition: all 0.3s;
             }
             .principal .main_container .container_apps .aplicacion img:nth-child(1):hover{
-                width: 64px;
+                width: 96px;
                 display: none;
                 transition: opacity 1.5s ease-in-out;
                 z-index: 1;
             }
             .principal .main_container .container_apps .aplicacion img:nth-child(2):hover{
-                width: 64px;
+                width: 96px;
                 display: block;
                 transition: opacity 1.5s ease-in-out;
                 z-index: 2;
@@ -207,7 +208,7 @@ body{
 
         }
 /*DISEÑO RESPONSIVO*/
-@media(max-width:850px){
+@media(max-width:1024px){
     .principal{
         display: flex;
         flex-direction: column;
@@ -222,7 +223,7 @@ body{
         place-items: center;
         align-items: center;
         justify-items: center;
-        height: 70px;
+        height: 84px;
         width: 100vw;
         background: var(--blue-dark);
     }
@@ -230,8 +231,8 @@ body{
         display: none;
         }
     .principal .main_head .head .logotype_brand img:nth-child(2){
-        width: 42px;
-        height: 42px;
+        width: 56px;
+        height: 56px;
         padding: 8px 0 0 40px;
         align-items: center;
         place-items: center;
@@ -241,7 +242,7 @@ body{
     .main_head .head a{
             text-decoration: none;
             text-transform: uppercase;
-            font-size: var(--sm);
+            font-size: var(--md);
             font-weight: bold;
             color:var(--white);
             margin: 0 40px 0 0;
@@ -266,29 +267,25 @@ body{
                 flex-direction: column;
                 place-content: center;
                 align-items: center;
+                justify-content: center;
+                justify-items: center;
                 }
-                .principal .main_container .container_description p:nth-child(1){
-                    font-size: var(--md);
+                .principal .main_container .container_description h1:nth-child(1){
                     padding: 0;
                     font-weight: bold;
-                    place-items: center;
-                    align-items: center;
+        
                     color:var(--blue-dark);
                     }
                 .principal .main_container .container_description p:nth-child(2){
                     font-size: var(--sm);
-                    place-items: center;
-                    align-items: center;
-                    place-content: center;
                     color: var(--blue-dark);
                     padding: 0 12px 0 12px;
-                    
                 }
                 .principal .main_container .container_description p:nth-child(3){
                     font-size: var(--sm);
                     font-weight: 600;
                     color:var(--blue-dark);
-                                 }
+                }
                 .principal .main_container .container_description ul{
                     display: flex;
                     place-content: center;
@@ -296,11 +293,11 @@ body{
                     margin: 0;
                 }
                 .principal .main_container .container_description ul li{
-                    font-size: 10px;
+                    font-size: var(--sm);
                     text-decoration: none;
                     list-style: none;
-                    margin:4px;
-                    padding: 4px;
+                    margin:4px 8px 4px 8px;
+                    padding: 6px;
                 }
                 .principal .main_container .container_description ul li a{
                     text-decoration: none;
@@ -312,13 +309,14 @@ body{
                     cursor: pointer;
                     color: var(--salmon-focus);
                     padding:4px;
-                    
                     }
                 .principal .main_container .container_apps{
                     display: grid;
                     place-content: center;
+                    width: 100wh;
                 }
                 .principal .main_container .container_apps .aplicacion{
+                    width: 100wh;
                     display: flex;
                     flex-direction: row;
                     place-items: center;
@@ -326,13 +324,13 @@ body{
                     border: 2px solid var(--blue-dark);
                     border-radius: 32px;
                     padding: 16px;
-                    margin: 7px;
+                    margin: 8px;
                     cursor: pointer;
                     color: var(--blue-dark);
             }
                 .principal .main_container .container_apps .aplicacion img:nth-child(1){
-                    width: 60px;
-                    height: 60px;
+                    width: 72px;
+                    height: 72px;
                     display: block;
                     transition: opacity 1.5s ease-in-out;
                     z-index: 2;
@@ -340,17 +338,17 @@ body{
 
                 .principal .main_container .container_apps .aplicacion img:nth-child(2){
                     position: absolute;
-                    width: 60px;
-                    height: 60px;
+                    width: 72px;
+                    height: 72px;
                     display: block;
                 }
                 .principal .main_container .container_apps .topic{
                     font-weight: 600;
-                    font-size:var(--sm);
+                    font-size:var(--lg);
                     padding: 0 0 8px 0;
                 }
                 .principal .main_container .container_apps .descripcion{
-                    font-size:10px;
+                    font-size:var(--md);
                 }
                 .principal .main_container .container_apps .topic a{
                     color: var(--blue-dark);
@@ -373,15 +371,15 @@ body{
                     transition: all 0.3s;
                     }
                     .principal .main_container .container_apps .aplicacion img:nth-child(1):hover{
-                        width: 60px;
-                        height: 60px;
+                        width: 72px;
+                        height: 72px;
                         display: none;
                         transition: opacity 1.5s ease-in-out;
                         z-index: 1;
                     }
                     .principal .main_container .container_apps .aplicacion img:nth-child(2):hover{
-                        width: 60px;
-                        height: 60px;
+                        width: 72px;
+                        height: 72px;
                         display: block;
                         transition: opacity 1.5s ease-in-out;
                         z-index: 2;

@@ -10,10 +10,10 @@
     --salmon-focus:#EE6F57;
     --text-input-field: #F7F7F7;
     --very-blue-light:#407b9b;
-    --vv:8px;
-    --sm:12px;
-    --md:16px;
-    --lg:20px;
+    --vv:10px;
+    --sm:14px;
+    --md:18px;
+    --lg:22px;
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -31,17 +31,17 @@ body{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     padding: 32px;
-    column-gap: 16px;
+    column-gap: 32px;
     }
 
 .figura{
     border: 2px solid var(--blue-dark);
-    border-radius: 16px;
+    border-radius: 32px;
     background: var(--white);
     display: flex;
     flex-direction: column;
     gap: 4px 4px;
-    padding: 8px;
+    padding: 16px;
 }
 .figura .encabezado{
     display: flex;
@@ -51,13 +51,13 @@ body{
     font-weight:bold;
 }
 .figura .encabezado img{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 .figura form{
     display: flex;
     flex-direction: column;
-    padding: 4px;
+    padding: 8px;
 }
 
 .figura form .label {
@@ -71,8 +71,8 @@ body{
     background-color: var(--text-input-field);
     border: 1px solid var(--white);
     border-radius: 8px;
-    height: 16px;
-    font-size: var(--sm);
+    height: 24px;
+    font-size: var(--md);
     padding: 4px;
     margin-bottom: 4px;
     place-items: center;
@@ -87,20 +87,20 @@ body{
 }
 
 .figura button{
-    border-radius: 8px;
+    border-radius: 16px;
     background: var(--base-color-light);
     border: 1px solid var(--blue-light);
     color: var(--blue-light);
     cursor: pointer;   
     width: 100%;
-    height: 16px;
+    height: 32px;
     margin: 8px;
-    font-size: var(--sm);
+    font-size: var(--md);
 }
 
 .figura button:hover{
-    border-radius: 8px;
-    background:var(--very-blue-light);
+    border-radius: 16px;
+    background:var(--blue-light);
     border: 1px solid var(--base-color-light);
     color:var(--base-color-light);;
     cursor: pointer;
@@ -112,14 +112,15 @@ body{
     display: flex;
     flex-direction: column;
     place-items: center;
-    font-size: var(--sm);
-    font-weight:300;
+    font-size: var(--md);
+    font-weight:500;
     margin: 0px;
- }
+    color: var(--salmon-focus);
+}
 
- .figura .resultados p{
+.figura .resultados p{
     border-bottom:1px solid var(--base-color-dark);
-  }
+}
 
 
 @media(max-width: 850px){
