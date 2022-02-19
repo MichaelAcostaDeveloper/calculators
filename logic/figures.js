@@ -84,7 +84,7 @@ function circulo(){
     const area=areaCircunferencia(r);
     const areaR=area.toFixed(2)
     const resultado=document.getElementById("resultCircunf")
-    resultado.innerHTML="The surfaces is: "+areaR+" cm²"
+    resultado.innerHTML="The surface is: "+areaR+" cm²"
 }
 function circunf(){
     const radio=document.getElementById("InputRadio")
@@ -92,7 +92,7 @@ function circunf(){
     const perimetro=perimetroCircunferencia(r);
     const perimetroR=perimetro.toFixed(2)
     const resultado=document.getElementById("resultCircunf")
-    resultado.innerHTML="The surfaces is: "+perimetroR+" cm"
+    resultado.innerHTML="The perimeter is: "+perimetroR+" cm"
 }
 //FUNCIONES PARA EL TRIANGULO
 //con esta función se verifica que existe el triángulo
