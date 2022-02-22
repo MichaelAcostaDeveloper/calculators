@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet href="/styles/coupons_discount_style.css" type="text/css" media=screen>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Coupons-discounts</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container_branch">
+            <p class="title">Calculator of Coupons and discounts</p>
+            <div class="titles">
+                <img src="/icons-logos/image.svg" alt="logo">
+                <p>By GreenyTech</p>
+            </div>
+        </div>
+        <div class="container_solution">
+            <div class="container_coupons">
+                    <label for="coupons_product">Select one of our coupons:</label>
+                    <select class="coupons_product" name="Coupons" id="coupons">
+                        <option value="0">No have</option>
+                        <option value="10">-10%</option>
+                        <option value="25">-25%</option>
+                        <option value="40">-40%</option>
+                        <option value="50">-50%</option>
+                    </select>
+            </div>
+            <div class="container_business">
+                <form>
+                    <label for="price_prodcut">Price of the product $ :</label>
+                    <input id="price_product" type="number">
+                    <label for="discount">Discount of the product % :</label>
+                    <input id="discount" type="number">
+                    <p>Coupon selected is:</p>
+                    <p class="coupon_selected">NONE</p>
+                </form>
+            </div>
+        </div>
+        <div class="button_container">
+            <button type="button" onclick="">Calculate the new value</button>
+        </div>
+        <div class="result_container">
+            <p id="resultados">NONE</p>
+        </div>
+    </div>
+    <script src="/logic/coupons.js"></script>
+</body>
+</html>
