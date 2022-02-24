@@ -13,7 +13,7 @@
 
     --vv:8px;
     --va:10px;
-    --sm:12px;
+    --sm:14px;
     --md:16px;
     --lg:20px;
 }
@@ -67,14 +67,17 @@ body{
     border: 1px solid var(--base-color-dark);
     border-radius: 16px;
     padding: 6px;
+    background: var(--base-color-dark);
 }
     .container_solution .container_coupons{
         margin: 0 24px 0 0 ;
         display: flex;
         flex-direction: column;
         border-radius: 16px ;
-        border: 1px solid var(--base-color-dark);
+        border: 1px solid var(--base-color-light);
         padding: 12px;
+        background:var(--blue-light);
+        color: var(--white);
                             }
         .container_solution .container_coupons .coupons{
             font-size: var(--md);
@@ -87,14 +90,70 @@ body{
 
     .container_solution .form .container_business{
         margin: 0 0 0 24px ;
-        border: 1px solid var(--base-color-dark);
+        border: none;
         padding: 12px 6px 12px 6px;
         border-radius: 16px ;
         display: flex;
         flex-direction: column;
+        width: 300px;
     }
         .container_solution .form .container_business .label{
-        font-size: var(--md);
+        font-size: var(--sm);
         margin-bottom: 4px;
         font-weight: bold;
         }
+
+        .container_solution .form .container_business .input{
+            font-size: var(--sm);
+            margin-bottom: 8px;
+            border-radius: 4px;
+            border:none;
+            background:var(--white);
+            height: 32px;
+            }
+        .container_solution .form .container_business p:nth-child(5){
+            margin-top: 0;
+            color: #145374;
+        }
+        .container_solution .form .container_business p:nth-child(6){
+            margin-top: 0;
+            color: #EE6F57;
+            font-weight: bold;
+            }
+            .container_solution .form .container_business .coupon_selected{
+                place-content: center;
+                place-items: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        .container_solution .form .container_business .button_container{
+            display: grid;
+            place-content: center;
+            place-items: center;
+        }
+            .container_solution .form .container_business .button_container button{
+                border-radius: 24px;
+                background: var(--salmon-focus);
+                color: var(--base-color-light);
+                height: 40px;
+                cursor: pointer;
+                border: none;
+            }
+            .container_solution .form .container_business .button_container button:hover{
+                border: 1px solid var(--salmon-focus);
+                border-radius: 24px;
+                background: var(--base-color-dark);
+                color: var(--salmon-focus);
+              
+                padding: 6px;
+            }
+            .container_solution .form .container_business .result_container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .container_solution .form .container_business .result_container p{
+                color: #00334E;
+                font-weight: bold;
+            }
