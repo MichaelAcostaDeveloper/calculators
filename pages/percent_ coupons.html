@@ -12,41 +12,41 @@
 </head>
 <body>
     <div class="main_container">
-        <div class="container_branch">
-            <p class="title">Calculator of Coupons and discounts</p>
-            <div class="titles">
-                <img src="/icons-logos/image.svg" alt="logo">
-                <p>By GreenyTech</p>
+            <div class="container_branch">
+                <p class="title">Calculator of Coupons and discounts</p>
+                <div class="titles">
+                    <img src="/icons-logos/image.svg" alt="logo">
+                    <p>By GreenyTech</p>
+                </div>
             </div>
-        </div>
-        <div class="container_solution">
-            <div class="container_coupons">
-                    <label for="coupons_product">Select one of our coupons:</label>
-                    <select class="coupons_product" name="Coupons" id="coupons">
-                        <option value="0">No have</option>
-                        <option value="10">-10%</option>
-                        <option value="25">-25%</option>
-                        <option value="40">-40%</option>
-                        <option value="50">-50%</option>
-                    </select>
-            </div>
-            <div class="container_business">
-                <form>
-                    <label for="price_prodcut">Price of the product $ :</label>
-                    <input id="price_product" type="number">
-                    <label for="discount">Discount of the product % :</label>
-                    <input id="discount" type="number">
-                    <p>Coupon selected is:</p>
-                    <p class="coupon_selected">NONE</p>
+            <div class="container_solution">
+                <div class="container_coupons">
+                        <label for="coupons_product" class="coupons">Select one of our coupons:</label>
+                        <select class="coupons_product" name="Coupons" id="coupons">
+                            <option value="0">No have</option>
+                            <option value="10">-10%</option>
+                            <option value="25">-25%</option>
+                            <option value="40">-40%</option>
+                            <option value="50">-50%</option>
+                        </select>
+                </div>
+                <form class="form">
+                    <div class="container_business">
+                        <label for="price_prodcut" class="label">Price of the product $ :</label>
+                        <input id="price_product" type="number">
+                        <label for="discount" class="label">Discount of the product % :</label>
+                        <input id="discount" type="number">
+                        <p>Coupon selected is:</p>
+                        <p class="coupon_selected">NONE</p>
+                        <div class="button_container">
+                            <button type="button" onclick="">Calculate the new value</button>
+                        </div>
+                        <div class="result_container">
+                            <p id="resultados">NONE</p>
+                        </div>
+                    </div>
                 </form>
             </div>
-        </div>
-        <div class="button_container">
-            <button type="button" onclick="">Calculate the new value</button>
-        </div>
-        <div class="result_container">
-            <p id="resultados">NONE</p>
-        </div>
     </div>
     <script src="/logic/coupons.js"></script>
 </body>
