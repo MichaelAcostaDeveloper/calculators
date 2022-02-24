@@ -22,12 +22,12 @@
             <div class="container_solution">
                 <div class="container_coupons">
                         <label for="coupons_product" class="coupons">Select one of our coupons:</label>
-                        <select class="coupons_product" name="Coupons" id="coupons">
-                            <option value="0">No have</option>
-                            <option value="10">Basic</option>
-                            <option value="25">Platinium</option>
-                            <option value="40">Gold</option>
-                            <option value="50">Premium</option>
+                        <select class="coupons_product" name="Coupons" onclick="select_coupon()" id="bx">
+                            <option value="You do not have coupons" id="option">No have</option>
+                            <option value="Your coupon is the 10%" id="option">Basic</option>
+                            <option value="Your coupon is the 15%" id="option">Platinium</option>
+                            <option value="Your coupon is the 20%" id="option">Gold</option>
+                            <option value="Your coupon is the 30%"id="option">Premium</option>
                         </select>
                 </div>
                 <form class="form">
@@ -36,8 +36,7 @@
                         <input id="price_product" type="number" class="input" placeholder="Example 45.89">
                         <label for="discount" class="label">Discount of the product % :</label>
                         <input id="discount" type="number" class="input" placeholder="Only the number">
-                        <p>Coupon selected is:</p>
-                        <p class="coupon_selected">NONE</p>
+                        <p class="coupon_selected" id="coupon_selected"></p>
                         <div class="button_container">
                             <button type="button" onclick="">Calculate the new value</button>
                         </div>

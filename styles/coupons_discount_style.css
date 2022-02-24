@@ -110,10 +110,6 @@ body{
             }
         .container_solution .form .container_business p:nth-child(5){
             margin-top: 0;
-            color: #145374;
-        }
-        .container_solution .form .container_business p:nth-child(6){
-            margin-top: 0;
             color: #EE6F57;
             font-weight: bold;
             }
