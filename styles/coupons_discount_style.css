@@ -109,7 +109,7 @@ body{
             height: 32px;
             }
         .container_solution .form .container_business p:nth-child(5){
-            margin-top: 0;
+            margin-top: 8px;
             color: #EE6F57;
             font-weight: bold;
             }
@@ -164,7 +164,7 @@ body{
     margin:0;
 }
 .container_solution{
-    width: 75%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,5 +190,20 @@ body{
     width: 100%;
     justify-content: start;
 }
+.container_solution .form{
+    margin: 8px 0 0 0;
+}
 
+.container_solution .form .container_business .label{
+    font-size: var(--sm);
+    margin-top: 4px ;
+    margin-bottom: 4px;
+    font-weight: bold;
+    }
+
+    .container_solution .form .container_business p:nth-child(5){
+        margin-top: 8px;
+        color: #EE6F57;
+        font-weight: bold;
+        }
 }
