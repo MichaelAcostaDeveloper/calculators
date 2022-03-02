@@ -59,6 +59,10 @@ body{
     background: var(--base-color-light);
     border-radius: 0 0 16px 16px;
     border: 1px solid var(--very-blue-light);
+    place-content: center;
+    place-items: center;
+    align-items: center;
+    align-content: center;
 }
 .body_container form div{
     display: flex;
@@ -89,6 +93,10 @@ body{
     border-radius: 32px;
     margin: 8px 0 8px 0;
     cursor: pointer;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+    align-content: center;
 }
 .body_container form div .button:hover{
     padding: 8px;
@@ -105,23 +113,36 @@ body{
     align-items: center;
     align-content: center;
 }
-
 .body_container .controlador .bottons{
     display: grid;
-    grid-template-columns: 2;
- }
- 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+}
+
 .body_container .controlador .bottons input{
     border: 1px solid var(--base-color-light);
     border-radius: 16px;
     height: 36px;
     width: 180px;
     color: var(--base-color-light);
-    background: #616A6B;
     margin: 6px;
     cursor: pointer;
 }
 
+.body_container .controlador .bottons input:nth-child(1){
+    background: #00334E;
+}
+.body_container .controlador .bottons input:nth-child(2){
+    background: #a99191;
+}
+.body_container .controlador .bottons input:nth-child(3){
+    background: #a99191;
+}
+.body_container .controlador .bottons input:nth-child(4){
+    background: #407b9b;
+}
 .body_container .controlador .answers{
 display: flex;
 flex-direction: column;
@@ -130,7 +151,6 @@ place-items: center;
 align-items: center;
 align-content: center;
 }
-
 .body_container .controlador .answers p{
     color: #EE6F57;
     font-weight: bold;
