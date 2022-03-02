@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet href="/styles/mensure_central_tendence.css" type="text/css" media=screen>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Mesure of central tendence</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="branch_container">
+            <h1>Mensures of central tendence</h1>
+            <img src="/icons-logos/logotype_white.svg" alt="logotype">
+        </div>
+
+        <div class="body_container">
+            <form action="/" class="form">
+                <div>
+                    <label for="curso" class="label">Ingrese el nombre del curso:</label>
+                    <input type="text" placeholder="Por ejemplo Matematica" class="input">
+                    <label for="nota" class="label">Ingrese la calificacion respectiva:</label>
+                    <input type="number" placeholder="Por ejemplo 10" class="input">
+                    <label for="ponderacion" class="label">Ingrese la ponderacion de la nota registrada %:</label>
+                    <input type="number" placeholder="Por ejemplo 20" class="input">
+                    <input type="button" value="Ingresar registro" class="button">
+                </div>
+            </form>
+
+            <div class="controlador">
+                <div class="bottons">
+                    <input type="button" value="Promedio">
+                    <input type="button" value="Promedio ponderado">
+                    <input type="button" value="Mediana">
+                    <input type="button" value="Moda">
+                </div>
+                <div class="answers">
+                    <p>Su valor es:</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/logic/mensure_central_tendence.js"></script>
+</body>
+</html>
