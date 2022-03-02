@@ -110,6 +110,7 @@ body{
     display: grid;
     grid-template-columns: 2;
  }
+ 
 .body_container .controlador .bottons input{
     border: 1px solid var(--base-color-light);
     border-radius: 16px;
