@@ -32,13 +32,13 @@
 
             <div class="controlador">
                 <div class="bottons">
-                    <input type="button" value="Promedio" class="eject">
-                    <input type="button" value="Promedio ponderado" class="eject">
-                    <input type="button" value="Mediana" class="eject">
-                    <input type="button" value="Moda" class="eject">
+                    <input type="button" value="Promedio" class="eject" onclick="calcular_mean()">
+                    <input type="button" value="Promedio ponderado" class="eject" onclick="calcular_promedio_ponderado()">
+                    <input type="button" value="Mediana" class="eject" onclick="calcular_median()">
+                    <input type="button" value="Moda" class="eject" onclick="calcular_moda()">
                 </div>
                 <div class="answers">
-                    <p>Su valor es:</p>
+                    <p id="resultados"></p>
                 </div>
             </div>
 
