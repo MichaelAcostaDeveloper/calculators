@@ -121,7 +121,7 @@ function calcular_moda(){
     if(vacio(list_scores)){
         alert("No exiten registros")
     }else{
-        //crear un objeto 
+        //crear un objeto
         const objetoLista={}
         //uso del metodo map para recorrer  la lista a objeto
         list_scores.map(
@@ -148,6 +148,7 @@ function calcular_moda(){
         console.log(moda);
     }
 }
+
 function calcular_promedio_ponderado(){
 if(vacio(signatures_all)){
     alert("No existen registros!!!")
@@ -171,7 +172,7 @@ if(vacio(signatures_all)){
         }
     )
     if (suma_pesos>100){
-        alert("No se puede calcular el promedio ponderado, por que la suma de pesos no debe exceder a 100");    
+        alert("No se puede calcular el promedio ponderado, por que la suma de pesos no debe exceder a 100");
     }else{
         var mean_ponderado=(producto_notas_pesos/suma_pesos).toFixed(2);
         const valor=document.getElementById("resultados");
