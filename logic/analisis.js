@@ -47,7 +47,7 @@ console.log(salariosOrdenados)
 //CALCULO DE LA MEDIANA GENERAL DEL TOP 10%
 const medianaGeneral=medianaSalarios(salariosOrdenados);
 //separar el top 10%
-const spliceStart=(salariosOrdenados.length*90)/100;
+const spliceStart=(salariosOrdenados.length*90 )/100;
 const spliceCount=salariosOrdenados.length-spliceStart;
 const salariosTop10=salariosOrdenados.splice(
     spliceStart,
