@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salaries</title>
+    <link rel=StyleSheet href="/styles/styles_salaries.css" type="text/css" media=screen>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Borrowing capacity</title>
 </head>
 <body>
-    <h1>Salaries</h1>
+    <div class="main_container">
+        <div class="container_topic">
+            <h1>Borrowing capacity</h1>
+            <img src="/icons-logos/logotype_white.svg" alt="logo">
+        </div>
+        <div class="container_salary">
+            <label for="sueldo" class="label">Input the value of the salary $:</label>
+            <input type="number" id="sueldo" placeholder="Example: 1230" class="input-sueldo" >
+        </div> 
+        <div class="container_expenses">
+            <label for="Education"><input type="checkbox" id="education" name="education">Education</label>
+            <label for="Clothing"><input type="checkbox" id="clothing" name="clothing"> Clothing</label>
+            <label for="Health"><input type="checkbox" id="health" name="heatth"> Health</label>
+            <label for="Feeding"><input type="checkbox" id="feeding" name="feeding"> Feeding</label>
+            <label for="Services"><input type="checkbox" id="services" name="services"> Basic services</label>
+            <label for="Transportation"><input type="checkbox" id="transportation" name="transportation"> Transportation</label>
+        </div>
+        <div class="container_values">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+            <input type="number">
+        </div>
+        <div class="conatiner_solution">
+            <input type="button" value="Calculate">
+            <p>None</p>
+        </div>
+    </div>
+
     <script src="/logic/salaries.js"></script>
     <script src="/logic/analisis.js"></script>
 </body>

@@ -1,0 +1,49 @@
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+    --graybase:#616A6B ;
+    --grabase-light:#a99191;
+    --base-color-dark:#eee4e4;
+    --base-color-light:#f3eded;
+    --blue-light:#145374;
+    --blue-dark:#00334E;
+    --salmon-focus:#EE6F57;
+    --text-input-field: #F7F7F7;
+    --very-blue-light:#407b9b;
+    --vv:10px;
+    --sm:14px;
+    --md:18px;
+    --lg:22px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    }
+.main_container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+   }
+.container_topic{
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+    justify-content: space-around;
+    background:var(--blue-dark);
+}
+    .container_topic h1{
+        font-weight:700;
+        font-size:var(--lg) ;
+        color: var(--base-color-dark);
+        }
+    .container_topic img{
+        width: 150px;
+    }
+.container_expenses{
+    display: flex;
+    flex-direction: column;
+}
