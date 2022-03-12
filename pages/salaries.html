@@ -16,30 +16,40 @@
             <h1>Borrowing capacity</h1>
             <img src="/icons-logos/logotype_white.svg" alt="logo">
         </div>
+
         <div class="container_salary">
             <label for="sueldo" class="label">Input the value of the salary $:</label>
             <input type="number" id="sueldo" placeholder="Example: 1230" class="input-sueldo" >
-        </div> 
-        <div class="container_expenses">
-            <label for="Education"><input type="checkbox" id="education" name="education">Education</label>
-            <label for="Clothing"><input type="checkbox" id="clothing" name="clothing"> Clothing</label>
-            <label for="Health"><input type="checkbox" id="health" name="heatth"> Health</label>
-            <label for="Feeding"><input type="checkbox" id="feeding" name="feeding"> Feeding</label>
-            <label for="Services"><input type="checkbox" id="services" name="services"> Basic services</label>
-            <label for="Transportation"><input type="checkbox" id="transportation" name="transportation"> Transportation</label>
         </div>
-        <div class="container_values">
-            <input type="number">
-            <input type="number">
-            <input type="number">
-            <input type="number">
-            <input type="number">
-            <input type="number">
+
+        <div class="container_body">
+            <div class="container_left">
+                <div class="container_expenses">
+                    <label for="Education" class="item"><input type="checkbox" id="education" name="education"> Education</label>
+                    <label for="Clothing" class="item"><input type="checkbox" id="clothing" name="clothing"> Clothing</label>
+                    <label for="Health" class="item"><input type="checkbox" id="health" name="heatth"> Health</label>
+                    <label for="Feeding" class="item"><input type="checkbox" id="feeding" name="feeding"> Feeding</label>
+                    <label for="Services" class="item"><input type="checkbox" id="services" name="services"> Basic services</label>
+                    <label for="Transportation" class="item"><input type="checkbox" id="transportation" name="transportation"> Transportation</label>
+                </div>
+                <div class="container_values">
+                    <input type="number" class="valor">
+                    <input type="number" class="valor">
+                    <input type="number" class="valor">
+                    <input type="number" class="valor">
+                    <input type="number" class="valor">
+                    <input type="number" class="valor">
+                </div>
+            </div>
+
+
+            <div class="container_right">
+                <input type="button" value="Calculate your capacity">
+                <p>None</p>
+            </div>
         </div>
-        <div class="conatiner_solution">
-            <input type="button" value="Calculate">
-            <p>None</p>
-        </div>
+
+
     </div>
 
     <script src="/logic/salaries.js"></script>
