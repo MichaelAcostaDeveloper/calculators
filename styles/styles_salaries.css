@@ -34,36 +34,49 @@ body{
     align-items: center;
     justify-content: space-around;
     background:var(--blue-dark);
+    border-radius: 16px 16px 0 0 ;
 }
     .container_topic h1{
         font-weight:700;
         font-size:var(--lg) ;
-        color: var(--base-color-dark);
+        color: var(--base-color-light);
         }
     .container_topic img{
         width: 150px;
     }
 .container_salary{
-    margin: 16px;
+    padding: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
     place-content: center;
     place-items: center;
+    border: 2px solid var(--base-color-light);
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 4px;
 }
     .container_salary .label{
         margin: 0 4px 0 0;
+        font-size: var(--md);
     }
     .container_salary .input-sueldo{
         margin: 0 0 0 6px;
-    }
+        border: none;
+        background: var(--base-color-light);
+        height: 32px;
+        border-radius: 32px;
+        padding: 8px;
+        font-size: var(--md);
+        }
 
 .container_body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: 20px 16px 20px 16px;
+    padding: 20px 16px 20px 16px;
+    border-radius: 16px;
+    border: 2px solid var(--base-color-light);
 }
     .container_left{
         width: 100%;
@@ -74,17 +87,26 @@ body{
         display: flex;
         flex-direction: column;
         width: 50%;
+        gap: 8.5px;
     }
         .container_left .container_expenses .item{
-            margin: 8px 8px 3px 0;
+            margin: 8px 8px 8px 0;
+        }
+        .container_left .container_expenses .check{
+            margin: 0 0 0 3px 0;
         }
     .container_left .container_values{
         display: flex;
         flex-direction: column;
         width: 50%;
+        margin: 1px 0 0 0;
     }
         .container_left .container_values .valor{
             margin: 8px 8px 0 0;
+            border: 0.5px solid var(--graybase);
+            border-radius: 32px;
+            background-color: #F7F7F7;
+            padding: 8px;
         }
     .container_right{
         width: 100%;
@@ -97,6 +119,29 @@ body{
         place-items: center;
         align-items: center;
         align-content: center;
+    }
 
-
+    .container_right .boton{
+        border: 1px solid var(--salmon-focus);
+        border-radius: 32px;
+        color: var(--salmon-focus);
+        background: var(--white);
+        height: 36px;
+        padding: 8px;
+        font-size: var(--md);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .container_right .boton:hover{
+        border: 1px solid var(--base-color-light);
+        border-radius: 36px;
+        color: var(--base-color-light);
+        background: var(--salmon-focus);
+        height: 40px;
+        padding: 10px;
+    }
+    .container_right p{
+        color: var(--salmon-focus);
+        font-size: var(--md);
+        font-weight: bold;
     }
