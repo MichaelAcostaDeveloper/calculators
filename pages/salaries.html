@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Borrowing capacity</title>
 </head>
 <body>
@@ -25,20 +26,32 @@
         <div class="container_body">
             <div class="container_left">
                 <div class="container_expenses">
-                    <label for="Education" class="item"><input type="checkbox" id="education" name="education" class="check"> Education $ :</label>
-                    <label for="Clothing" class="item"><input type="checkbox" id="clothing" name="clothing" class="check"> Clothing $ :</label>
-                    <label for="Health" class="item"><input type="checkbox" id="health" name="heatth" class="check"> Health $ :</label>
-                    <label for="Feeding" class="item"><input type="checkbox" id="feeding" name="feeding" class="check"> Feeding $ :</label>
-                    <label for="Services" class="item"><input type="checkbox" id="services" name="services" class="check"> Basic services $ :</label>
-                    <label for="Transportation" class="item"><input type="checkbox" id="transportation" name="transportation" class="check"> Transportation $ :</label>
+                    <label for="Education" value="education" class="item">
+                        <input type="checkbox" id="clikear1" name="education" class="check" onchange="mostrar()"> Education $ :
+                    </label>
+                    <label for="Clothing" value="clothing" class="item">
+                        <input type="checkbox" id="clikear2" name="clothing" class="check" onchange="mostrar()"> Clothing $ :
+                    </label>
+                    <label for="Health" value="health" class="item">
+                        <input type="checkbox" id="clikear3" name="heatth" class="check" onchange="mostrar()"> Health $ :
+                    </label>
+                    <label for="Feeding" value="feeding" class="item">
+                        <input type="checkbox" id="clikear4" name="feeding" class="check" onchange="mostrar()"> Feeding $ :
+                    </label>
+                    <label for="Services" value="services" class="item">
+                        <input type="checkbox" id="clikear5" name="services" class="check" onchange="mostrar()"> Basic services $ :
+                    </label>
+                    <label for="Transportation" value="transportation" class="item">
+                        <input type="checkbox" id="clikear6" name="transportation" class="check" onchange="mostrar()"> Transportation $ :
+                    </label>
                 </div>
                 <div class="container_values">
-                    <input type="number" class="valor" placeholder="Example 150">
-                    <input type="number" class="valor" placeholder="Example 150">
-                    <input type="number" class="valor" placeholder="Example 150">
-                    <input type="number" class="valor" placeholder="Example 150">
-                    <input type="number" class="valor" placeholder="Example 150">
-                    <input type="number" class="valor" placeholder="Example 150">
+                    <input type="number" class="valor" placeholder="Example 150" id="edu" disabled="true">
+                    <input type="number" class="valor" placeholder="Example 150" id="vestido" disabled="true">
+                    <input type="number" class="valor" placeholder="Example 150" id="salud" disabled="true" >
+                    <input type="number" class="valor" placeholder="Example 150" id="comida" disabled="true">
+                    <input type="number" class="valor" placeholder="Example 150" id="servicio"disabled="true">
+                    <input type="number" class="valor" placeholder="Example 150" id="transporte"disabled="true">
                 </div>
             </div>
 
@@ -53,6 +66,6 @@
     </div>
 
     <script src="/logic/salaries.js"></script>
-    <script src="/logic/analisis.js"></script>
+
 </body>
 </html>

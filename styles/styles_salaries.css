@@ -104,11 +104,15 @@ body{
         margin: 1px 0 0 0;
     }
         .container_left .container_values .valor{
-            margin: 8px 8px 0 0;
+            margin: 5px;
             border: 0.5px solid var(--graybase);
             border-radius: 32px;
             background-color:var(--white);
             padding: 8px;
+            align-items: center;
+            align-content: center;
+            place-content: center;
+            place-items: center;
         }
     .container_right{
         width: 100%;
