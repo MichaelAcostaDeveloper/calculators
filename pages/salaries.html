@@ -18,14 +18,16 @@
             <img src="/icons-logos/logotype_white.svg" alt="logo">
         </div>
 
-        <div class="container_salary">
+        <div class="container_salary"> 
             <label for="sueldo" class="label">Input the value of the salary $:</label>
             <input type="number" id="sueldo" placeholder="Example 1230" class="input-sueldo" >
         </div>
-
+        <div class="container_consignment">
+            <p>Check your fixed costs:</p>
+        </div>
         <div class="container_body">
             <div class="container_left">
-                <div class="container_expenses">
+                    <div class="container_expenses">
                     <label for="Education" value="education" class="item">
                         <input type="checkbox" id="clikear1" name="education" class="check" onchange="mostrar()"> Education $ :
                     </label>
@@ -57,8 +59,8 @@
 
 
             <div class="container_right">
-                <input type="button" value="Calculate your capacity" class="boton">
-                <p>Your borrowing capacity is around</p>
+                <input type="button" value="Calculate your capacity" class="boton" onclick="calculate_capacity()">
+                <p id="resultados"></p>
             </div>
         </div>
 

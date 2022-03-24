@@ -148,21 +148,24 @@ body{
     }
     .container_right p{
         color: var(--salmon-focus);
-        font-size: var(--md);
+        font-size: 16px;
         font-weight: 500;
+        padding: 0 10px 0 10px;
+
     }
 
     /*Design mobile*/
 @media(max-width: 850px){
     .main_container{
         width: 100vw;
-        height: 100vh;
+        height:100vh;
         display: grid;
         place-content: center;
     }
 
     .container_topic{
         width: 650px;
+        height: 40px;
         display: flex;
         flex-direction: row;
         place-content: center;
@@ -244,6 +247,9 @@ body{
         align-content: center;
         place-content: center;
         place-items: center;
+        }
+        .container_salary .label{
+            font-size:16px;
         }
     .container_body{
         width: 350px;
